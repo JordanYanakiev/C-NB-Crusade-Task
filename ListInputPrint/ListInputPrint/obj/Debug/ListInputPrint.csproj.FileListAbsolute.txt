@@ -1,0 +1,7 @@
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\bin\Debug\ListInputPrint.exe.config
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\bin\Debug\ListInputPrint.exe
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\bin\Debug\ListInputPrint.pdb
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\obj\Debug\ListInputPrint.csprojResolveAssemblyReference.cache
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\obj\Debug\ListInputPrint.csproj.CoreCompileInputs.cache
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\obj\Debug\ListInputPrint.exe
+C:\(D)\RAZNI\C# PROJECTS\ListInputPrint\ListInputPrint\obj\Debug\ListInputPrint.pdb
