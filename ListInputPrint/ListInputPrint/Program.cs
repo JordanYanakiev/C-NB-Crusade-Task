@@ -10,10 +10,12 @@ namespace ListInputPrint
     {
 
         //Method to count the positive and the negative numbres
-        static void CountDigits(ref List<int> myList,  int counterPositive, int counterNegative)
+        static bool CountDigits(ref List<int> myList, out int counterPositive, out int counterNegative)
         {
             int listLength = myList.Count;
             bool flag = false;
+            counterPositive = 0;
+            counterNegative = 0;
 
             for (int i = 0; i < listLength; i++)
             {
@@ -34,8 +36,10 @@ namespace ListInputPrint
             } else
                 flag = false;
 
-            Console.WriteLine("In this List we have {0} positive and {1} negative numbers", counterPositive, counterNegative);
+           // Console.WriteLine("In this List we have {0} positive and {1} negative numbers", counterPositive, counterNegative);
             Console.WriteLine("The equality result between positive and negative numbers is: {0}", flag);
+
+            return flag;
         }
 
 
@@ -130,8 +134,8 @@ namespace ListInputPrint
             List<int> intList = new List<int>();
 
             //Initialize counters
-            int positiveCounter = 0;
-            int negativeCounter = 0;
+            int positiveCounter;
+            int negativeCounter;
 
             //Implement the already created methods
             Input(intList);
@@ -146,7 +150,8 @@ namespace ListInputPrint
 
             Console.WriteLine();
             Console.WriteLine();
-            CountDigits(ref intList, positiveCounter,  negativeCounter);
+            CountDigits(ref intList, out positiveCounter, out  negativeCounter);
+            Console.WriteLine("In this List we have {0} positive and {1} negative numbers", positiveCounter, negativeCounter);
         }
     }
 }
