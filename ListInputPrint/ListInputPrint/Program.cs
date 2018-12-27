@@ -9,6 +9,27 @@ namespace ListInputPrint
     class Program
     {
 
+        //Base Crusader Class
+        public class CrusaderBase
+        {
+            public string name = null;
+            public int level = 0;
+            
+            //Cosnstructors for the class CrusaderBase
+            public CrusaderBase()
+            { }
+
+            public CrusaderBase(string Name, int Level)
+            {
+                this.name = Name;
+                this.level = Level;
+            }
+        }
+
+
+
+
+
         //Method to count the positive and the negative numbres
         static bool CountDigits(ref List<int> myList, out int counterPositive, out int counterNegative)
         {
@@ -36,7 +57,6 @@ namespace ListInputPrint
             } else
                 flag = false;
 
-           // Console.WriteLine("In this List we have {0} positive and {1} negative numbers", counterPositive, counterNegative);
             Console.WriteLine("The equality result between positive and negative numbers is: {0}", flag);
 
             return flag;
@@ -152,6 +172,16 @@ namespace ListInputPrint
             Console.WriteLine();
             CountDigits(ref intList, out positiveCounter, out  negativeCounter);
             Console.WriteLine("In this List we have {0} positive and {1} negative numbers", positiveCounter, negativeCounter);
+
+            CrusaderBase KuoriTheWhicDoctor = new CrusaderBase("Kuori The Which Doctor", 47);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine(KuoriTheWhicDoctor.name);
+            Console.WriteLine(KuoriTheWhicDoctor.level);
+
+
+
         }
     }
 }
