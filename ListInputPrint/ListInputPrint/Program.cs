@@ -9,22 +9,22 @@ namespace ListInputPrint
     class Program
     {
 
-        //Base Crusader Class
-        public class CrusaderBase
-        {
-            public string name = null;
-            public int level = 0;
+        ////Base Crusader Class
+        //public class CrusaderBase
+        //{
+        //    public string name = null;
+        //    public int level = 0;
             
-            //Cosnstructors for the class CrusaderBase
-            public CrusaderBase()
-            { }
+        //    //Cosnstructors for the class CrusaderBase
+        //    public CrusaderBase()
+        //    { }
 
-            public CrusaderBase(string Name, int Level)
-            {
-                this.name = Name;
-                this.level = Level;
-            }
-        }
+        //    public CrusaderBase(string Name, int Level)
+        //    {
+        //        this.name = Name;
+        //        this.level = Level;
+        //    }
+        //}
 
 
 
@@ -179,7 +179,13 @@ namespace ListInputPrint
             Console.WriteLine();
             Console.WriteLine(KuoriTheWhicDoctor.name);
             Console.WriteLine(KuoriTheWhicDoctor.level);
+            KuoriTheWhicDoctor.Talk("My name is Kuori");
 
+            Nate NateDragon = new Nate("Nate");
+            NateDragon.Talk();
+
+            Natali NataliDragon = new Natali("Natali");
+            NataliDragon.Talk();
 
 
         }
