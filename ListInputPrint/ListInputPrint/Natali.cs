@@ -17,26 +17,21 @@ namespace ListInputPrint
             this.name = Name;
         }
 
-        public void Talk()
+        public Natali (string Name, int Level, int Health)    //Constructor with three parameters
+        {
+            this.name = Name;
+            this.level = Level;
+            this.health = Health;
+        }
+
+        public void Talk()          //Method that imitates Natali's speech
         {
             Console.WriteLine("my nAme is natali");
         }
 
-    }
-
-    public class Nate:CrusaderBase     //Nate class inheriting the CrusaderBase
-    {
-        public Nate()     //Empty constructor
-        { }
-
-        public Nate(string Name)    //Constructor with one parameter
+        public void Hit( )
         {
-            this.name = Name;
-        }
 
-        public void Talk()
-        {
-            Console.WriteLine("I am Nate!");
         }
 
     }

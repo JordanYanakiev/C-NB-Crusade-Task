@@ -181,12 +181,14 @@ namespace ListInputPrint
             Console.WriteLine(KuoriTheWhicDoctor.level);
             KuoriTheWhicDoctor.Talk("My name is Kuori");
 
-            Nate NateDragon = new Nate("Nate");
+            Nate NateDragon = new Nate("Nate", 0, 80);
             NateDragon.Talk();
+            Console.WriteLine("Nate's health is {0}", NateDragon.health);
 
-            Natali NataliDragon = new Natali("Natali");
+            Natali NataliDragon = new Natali("Natali", 0, 100);
             NataliDragon.Talk();
-
+        
+            Console.WriteLine("Natali's health is: {0}", NataliDragon.health);
 
         }
     }
