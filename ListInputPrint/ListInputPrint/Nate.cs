@@ -22,6 +22,13 @@ namespace ListInputPrint
             this.level = Level;
             this.health = Health;
         }
+        public Nate(string Name, int Level, int Health, int Damage)    //Constructor with three parameters
+        {
+            this.name = Name;
+            this.level = Level;
+            this.health = Health;
+            this.damage = Damage;
+        }
 
         public Nate(string Name, int Level) : base (Name, Level)
         {

@@ -12,6 +12,7 @@ namespace ListInputPrint
         public string name = string.Empty;
         public int level = 0;
         public int health = 0;
+        public int damage = 0;
 
         //Cosnstructors for the class CrusaderBase
         public CrusaderBase()    // Empty constructor
@@ -40,10 +41,16 @@ namespace ListInputPrint
             Console.WriteLine(smthToSay);
         }
 
-        public virtual void Hit( ref CrusaderBase crusaderbase )              // Method for imitating hit from the crusader
+        public virtual void Hit( ref CrusaderBase target )              // Method for imitating hit from the crusader
         {
+            health += 1; 
+
             throw new Exception();
         }
 
+        public virtual void Die()      // Method immitating the death of a hero
+        {
+
+        }
     }
 }
