@@ -13,6 +13,7 @@ namespace ListInputPrint
         public int level = 0;
         public int health = 0;
         public int damage = 0;
+        public bool IsAlive = true;
 
         //Cosnstructors for the class CrusaderBase
         public CrusaderBase()    // Empty constructor
@@ -44,13 +45,16 @@ namespace ListInputPrint
         public virtual void Hit( ref CrusaderBase target )              // Method for imitating hit from the crusader
         {
             health += 1; 
-
+            if (health == 0)
+            {
+                Die();
+            }
             throw new Exception();
         }
 
         public virtual void Die()      // Method immitating the death of a hero
         {
-
+            IsAlive = false;
         }
     }
 }

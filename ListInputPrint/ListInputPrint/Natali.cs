@@ -43,5 +43,10 @@ namespace ListInputPrint
 
         }
 
+        public virtual void Die()      // Method immitating the death of a hero
+        {
+            IsAlive = false;
+        }
+
     }
 }

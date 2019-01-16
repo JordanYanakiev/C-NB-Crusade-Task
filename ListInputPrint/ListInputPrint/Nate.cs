@@ -41,5 +41,15 @@ namespace ListInputPrint
             Console.WriteLine("I am Nate!");
         }
 
+        public override void Hit(ref CrusaderBase target) // Method imitating Hit from one hero to another
+        {
+            target.health -= this.damage;
+
+        }
+
+        public virtual void Die()      // Method immitating the death of a hero
+        {
+            IsAlive = false;
+        }
     }
 }
