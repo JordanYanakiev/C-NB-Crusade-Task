@@ -1,4 +1,32 @@
-﻿using System;
+﻿/*
+ 
+ 1. Нов метод на CrusaderBase 
+ UseSpecialAbility(ref CrusaderBase), 
+ който да може да се наследява 
+
+2. Направи нов crusader Kuori, 
+който на UseSpecial Ability, 
+да хеалва, target-а с няколко HP
+
+3. Ето и още една направи нов клас CrusaderFactory.cs
+той да има методи public static CrusaderBase CreateNate()
+		  public static CreateNatali()
+и двата метода да връщат съответния клас
+
+4. Направи и един Enum Crusaders
+и вътре None, Natalie,Nate и така нататък
+ 
+ 
+ 
+ */
+
+
+
+
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

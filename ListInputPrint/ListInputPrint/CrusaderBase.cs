@@ -56,5 +56,10 @@ namespace ListInputPrint
         {
             IsAlive = false;
         }
+
+        public virtual void UseSpecialAbility(ref CrusaderBase target)  //This implements the special ability of each crusader
+        {
+
+        }
     }
 }
