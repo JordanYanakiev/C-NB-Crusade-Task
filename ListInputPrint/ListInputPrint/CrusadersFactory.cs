@@ -8,17 +8,21 @@ namespace ListInputPrint
 {
     class CrusadersFactory
     {
-        enum Crusaders {none, crusaderNate, crusaderNatali, crusaderKuori };
-        public void CreateNate()
+        enum CrusaderTypes {none, crusaderNate, crusaderNatali, crusaderKuori };
+
+        //Method for creating crusader Nate
+        public void CreateNate(string name, int level, int health, int damage)
         {
-            Nate crusaderNate = new Nate("Nate", 200, 1900, 250);
+            Nate crusaderNate = new Nate(name, level, health, damage);
         }
 
-        public void CreateNatali()
+        //Method for creating crusader Natali
+        public void CreateNatali(string name, int level, int health, int damage)
         {
-            Natali crusaderNatali = new Natali("Natali", 200, 1500, 300);
+            Natali crusaderNatali = new Natali(name, level, health, damage);
         }
 
+        //Method or creating crusader Kuori
         public void CreateKuori()
         {
             Kuori crusaderKuori = new Kuori();

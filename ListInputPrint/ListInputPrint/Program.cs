@@ -1,22 +1,24 @@
 ﻿/*
  
- 1. Нов метод на CrusaderBase 
- UseSpecialAbility(ref CrusaderBase), 
- който да може да се наследява 
 
-2. Направи нов crusader Kuori, 
-който на UseSpecial Ability, 
-да хеалва, target-а с няколко HP
-
-3. Ето и още една направи нов клас CrusaderFactory.cs
-той да има методи public static CrusaderBase CreateNate()
-		  public static CreateNatali()
-и двата метода да връщат съответния клас
-
-4. Направи и един Enum Crusaders
-и вътре None, Natalie,Nate и така нататък
+ 1. Сложи cooldown на Special Ability-то. 
+    В базовия клас.
+    
+ 2. Сложи cooldownSpecial от тип DateTime.
  
- 
+ 3. Нека има и cooldownSpecialInterval 
+    от тип int - това ще е в милисекунди.
+
+ 4. Нека енума се казва да е CrusaderTypes
+    и нека базовия клас има такова поле, 
+    от тип CrusaderTypes примерно CrusaderType.
+
+ 5. Нека има и друг клас CrusadersMgr.cs
+    този вече ще е статичен клас
+    вътре сложи само един List<CrusaderBase> crusaders
+    този лист нека е публиен и статичен
+
+
  
  */
 

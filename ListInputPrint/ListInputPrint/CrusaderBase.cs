@@ -14,6 +14,7 @@ namespace ListInputPrint
         public int health = 0;
         public int damage = 0;
         public bool IsAlive = true;
+        public string crusaderType;
 
         //Cosnstructors for the class CrusaderBase
         public CrusaderBase()    // Empty constructor
@@ -59,7 +60,8 @@ namespace ListInputPrint
 
         public virtual void UseSpecialAbility(ref CrusaderBase target)  //This implements the special ability of each crusader
         {
-
+            DateTime coolDownAbility;
+            int coolDownSpecialInterval;
         }
     }
 }
