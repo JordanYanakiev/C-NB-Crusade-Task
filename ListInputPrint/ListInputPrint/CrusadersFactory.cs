@@ -11,9 +11,11 @@ namespace ListInputPrint
         enum CrusaderTypes {none, crusaderNate, crusaderNatali, crusaderKuori };
 
         //Method for creating crusader Nate
-        public void CreateNate(string name, int level, int health, int damage)
+        public static void CreateNate(string name, int level, int health, int damage)
         {
-            Nate crusaderNate = new Nate(name, level, health, damage);
+            Nate NateDragon = new Nate(name, level, health, damage);
+            //Print the info for the new object NateDragon
+            Console.WriteLine(NateDragon.name + " " + NateDragon.level + " "  + NateDragon.health + " " + NateDragon.damage);
         }
 
         //Method for creating crusader Natali
