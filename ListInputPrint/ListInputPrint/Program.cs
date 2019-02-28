@@ -214,8 +214,9 @@ namespace ListInputPrint
             //Nate NateDragon = new Nate("Nate", 0, 80);
             //NateDragon.Talk();
             //string NateName = "NateDragon";
-            CrusadersFactory.CreateNate("Nate", 100, 200, 300); //This works in order to create Nate, but It gives error if i try Console.WriteLin(CrusadersFactory.NateDragon.name)
-            //Console.WriteLine("Nate's health is {0}", CrusadersFactory.NateDragon.health);
+            CrusadersFactory.CreateNate("Koko", 100, 200, 300); //This works in order to create Nate, but It gives error if i try Console.WriteLin(CrusadersFactory.NateDragon.name)
+            Console.WriteLine("Nate's health is {0}", CrusadersFactory.crusaderNate.name);
+            Console.WriteLine("Nate's level is {0}", CrusadersFactory.crusaderNate.level);
 
             Natali NataliDragon = new Natali("Natali", 0, 100);
             NataliDragon.Talk();
