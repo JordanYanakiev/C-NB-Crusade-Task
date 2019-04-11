@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ListInputPrint
 {
-    class CrusadersFactory
+    class CrusadersFactory : CrusaderBase
     {
         public static Nate crusaderNate;
         public static Natali crusaderNatali;
+        public static Kuori crusaderKuori;
 
         enum CrusaderTypes {none, NateDragon, crusaderNatali, crusaderKuori };
       
@@ -28,7 +29,7 @@ namespace ListInputPrint
         //Method for creating crusader Natali
         public static Natali CreateNatali(string name, int level, int health, int damage)
         {
-            Natali crusaderNatali = new Natali(name, level, health, damage);
+            crusaderNatali = new Natali(name, level, health, damage);
 
             return crusaderNatali;
         }
@@ -36,7 +37,7 @@ namespace ListInputPrint
         //Method or creating crusader Kuori
         public static Kuori CreateKuori(string name, int level, int health, int damage)
         {
-            Kuori crusaderKuori = new Kuori(name, level, health, damage);
+            crusaderKuori = new Kuori(name, level, health, damage);
 
             return crusaderKuori;
         }

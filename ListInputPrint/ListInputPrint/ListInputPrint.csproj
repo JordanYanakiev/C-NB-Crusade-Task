@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CombatMgr.cs" />
     <Compile Include="CrusaderMgr.cs" />
     <Compile Include="CrusadersFactory.cs" />
     <Compile Include="Kuori.cs" />

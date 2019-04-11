@@ -18,6 +18,13 @@
     вътре сложи само един List<CrusaderBase> crusaders
     този лист нека е публиен и статичен
 
+ 6. Нека има нов клас CombatMgr
+    да има метод Fight(ref crusader1, ref crusader2).
+    Да ги сбива, и да връща -1 крусейдъра победител
+
+ 7. Направи ново пропърти на CrusaderBase, от тип string
+    и в конструктора на всеки crusader да се попълва с 
+    произволен стринг от цифри с дължина 10
 
  
  */
@@ -215,13 +222,18 @@ namespace ListInputPrint
             //NateDragon.Talk();
             //string NateName = "NateDragon";
             CrusadersFactory.CreateNate("Koko", 100, 200, 300); //This works in order to create Nate, but It gives error if i try Console.WriteLin(CrusadersFactory.NateDragon.name)
+            CrusadersFactory.CreateNatali("Natali", 90, 150, 200);
+            Console.WriteLine("Natali's name is {0}", CrusadersFactory.crusaderNatali.name);
             Console.WriteLine("Nate's health is {0}", CrusadersFactory.crusaderNate.name);
             Console.WriteLine("Nate's level is {0}", CrusadersFactory.crusaderNate.level);
 
-            Natali NataliDragon = new Natali("Natali", 0, 100);
+            Natali NataliDragon = new Natali("Natali", 0, 100, 14);
             NataliDragon.Talk();
-        
+            CrusaderBase NateDragon = new Nate("Nate", 30, 200, 23);
+            CrusaderBase NataliDragonn = new Natali("Natali", 0, 100, 14);
+
             Console.WriteLine("Natali's health is: {0}", NataliDragon.health);
+            CombatMgr.Fight(ref NataliDragonn,  ref NateDragon);
 
         }
     }
