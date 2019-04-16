@@ -12,19 +12,19 @@ namespace ListInputPrint
         public Natali()  //Empty constructor
         { }
 
-        public Natali(string Name)  //Constructor with one parameter
+        public Natali(string Name) : base (Name) //Constructor with one parameter
         {
             this.name = Name;
         }
 
-        public Natali (string Name, int Level, int Health)    //Constructor with three parameters
+        public Natali (string Name, int Level, int Health) : base (Name, Level, Health)   //Constructor with three parameters
         {
             this.name = Name;
             this.level = Level;
             this.health = Health;
         }
 
-        public Natali(string Name, int Level, int Health, int Damage)    //Constructor with three parameters
+        public Natali(string Name, int Level, int Health, int Damage) : base (Name, Level, Health, Damage)   //Constructor with three parameters
         {
             this.name = Name;
             this.level = Level;

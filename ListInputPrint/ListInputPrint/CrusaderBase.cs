@@ -17,6 +17,11 @@ namespace ListInputPrint
         public string crusaderType;
         public DateTime coolDown;
 
+        public int Damage
+        {
+            get { return damage; }
+            set { damage = value;  }
+        }
 
         //Cosnstructors for the class CrusaderBase
         public CrusaderBase()    // Empty constructor
@@ -38,6 +43,14 @@ namespace ListInputPrint
             this.name = Name;
             this.level = Level;
             this.health = Health;
+        }
+
+        public CrusaderBase(string Name, int Level, int Health, int Damge)    //Constructor with four parameters
+        {
+            this.name = Name;
+            this.level = Level;
+            this.health = Health;
+            this.damage = Damage;
         }
 
         public void Talk(string smthToSay)      //Method that imitates crusaders speech

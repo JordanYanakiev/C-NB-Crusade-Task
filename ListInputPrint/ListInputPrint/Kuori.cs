@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListInputPrint
 {
-    class Kuori:CrusaderBase
+    class Kuori : CrusaderBase
     {
         public Kuori ()
         { }

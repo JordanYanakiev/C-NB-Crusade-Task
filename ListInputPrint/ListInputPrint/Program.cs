@@ -229,11 +229,11 @@ namespace ListInputPrint
 
             Natali NataliDragon = new Natali("Natali", 0, 100, 14);
             NataliDragon.Talk();
-            CrusaderBase NateDragon = new Nate("Nate", 30, 200, 23);
-            CrusaderBase NataliDragonn = new Natali("Natali", 0, 100, 14);
+            Nate NateDragon = new Nate("Nate", 30, 200, 23);
+            
 
             Console.WriteLine("Natali's health is: {0}", NataliDragon.health);
-            CombatMgr.Fight(ref NataliDragonn,  ref NateDragon);
+            CombatMgr.Fight( NataliDragon,  NateDragon);
 
         }
     }
